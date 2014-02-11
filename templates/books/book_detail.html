@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+Book Detail
+{% endblock %}
+
+{% block content %}
+<div>
+	<a href='../..'>Index</a>&rsaquo;<a href='..'>Books</a>&rsaquo;Book Detail
+</div>
+<h2>Book Detail</h2>
+<table  border=1 bordercolor="black">
+	<tr><td width=100>id</td><td>{{ object.id }}</td><tr>
+	<tr><td>Title</td><td>{{ object.title }}</td><tr>
+	<tr><td>Authors</td>
+		<td>
+		{% if object.authors %}
+			{% for author in object.authors.all %}
+				{{ author }} <br />
+			{% endfor %}
+		{% else %}
+			No authors found !!!
+		{% endif %}
+		</td>
+	<tr>
+	<tr><td>Publisher</td><td>{{ object.publisher }}</td><tr>
+	<tr><td>Publication_date</td><td>{{ object.publication_date }}</td><tr>
+</table>
+<br/>
+<a href='delete'>delete</a>
+<a href='update'>update</a>
+{% endblock %}

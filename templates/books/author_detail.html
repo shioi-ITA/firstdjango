@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+Auther Detail
+{% endblock %}
+{% block content %}
+<div>
+	<a href='../..'>Index</a>&rsaquo;<a href='..'>Authors</a>&rsaquo;Author Detail
+</div>
+<h2>Author Detail</h2>
+<table  border=1 bordercolor="black">
+	<tr><td width=100>id</td><td>{{ object.id }}</td><tr>
+	<tr><td>first_name</td><td> {{ object.first_name }}</td><tr>
+	<tr><td>last_name</td><td>{{ object.last_name }}</td><tr>
+	<tr><td>email</td><td>{{ object.email }}</td><tr>
+</table>
+<br/>
+<a href='delete'>delete</a>
+<a href='update'>update</a>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base4book.html" %}
+
+{% block title %}Create{% endblock %}
+
+{% block content %}
+<div>
+	<a href='../..'>Index</a>&rsaquo;<a href='..'>Books</a>&rsaquo;Book Create
+</div>
+<h2>Book Create</h2>
+	<form action="" method="post" class="form-horizontal">
+		{% csrf_token %}
+		<div class="form-row">
+			{{ form.as_p }}
+			<script type="text/javascript">
+				addEvent(window, "load", function(e) { SelectFilter.init("id_authors", "authors", 0, "{{ STATIC_URL }}admin/"); });
+			</script>
+		</div>
+		<div class="submit-row">
+			<input type="submit" value="Create" />
+		</div>
+	</form>
+{% endblock %}
+</body>

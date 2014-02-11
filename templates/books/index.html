@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+Books Index
+{% endblock %}
+
+{% block content %}
+<h2>Index</h2>
+<form action="" method="post">
+	{% csrf_token %}
+	<ul>
+		<li><a href='author'>Author List</a>
+		<li><a href='publisher'>Publisher List</a>
+		<li><a href='book'>Book List</a>
+	</ul>
+	<div>
+		<a href='/logout/'>logout</a>
+	</div>
+</form>
+{% endblock %}
