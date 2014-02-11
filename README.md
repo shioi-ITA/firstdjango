@@ -1,7 +1,7 @@
 firstdjango
 ===========
 
-I'm a newbee with django. I read the Django Book on the Internet.
+I'm a newbie with django. I read the Django Book on the Internet.
 
 This is my first django project based on python2.7, django1.6 and sqlite3.
 I used GenericViews(ListView, DetailView, UpdateView, CreateView, DeleteView).
