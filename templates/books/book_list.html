@@ -1,10 +1,11 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block content %}
 	<div>
-		<a href='..'>Index</a>&rsaquo;Books
+		<a href='..'>{% trans 'Books Index' %}</a>&rsaquo;{% trans 'Book List' %}
 	</div>
-	<h2>Books</h2>
+	<h2>{% trans 'Book List' %}</h2>
 	{% if object_list %}
 		<ul>
 			{% for object in object_list %}
@@ -27,8 +28,8 @@
 			</div>
 		{% endif %}
 	{% else %}
-		<p>No authors found !!! :(</p>
+		<p>{% trans 'None of books was founded.' %}(</p>
 	{% endif %}
 	
-	<a href='../book/new/'>create</a>
+	<a href='../book/new/'>{% trans 'Create' %}</a>
 {% endblock %}

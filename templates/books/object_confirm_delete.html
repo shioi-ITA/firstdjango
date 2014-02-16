@@ -1,15 +1,15 @@
 {% extends "base.html" %}
+{% load i18n %}
 
-{% block title %}
-Delete Confirm
-{% endblock %}
+{% block title %}{% trans 'Delete Confirm' %}{% endblock %}
+
 {% block content %}
 <div>
-	<a href='..'>Back</a>
+	<a href='..'>{% trans 'Back' %}</a>
 </div>
+<h2>{% trans 'Delete Confirm' %}</h2>
 <form action="" method="post">{% csrf_token %}
-    <p>Are you sure you want to delete "{{ object }}"?</p>
-    <input type="submit" value="Confirm" />
+    <p>{% trans 'Are you sure that you want to delete' %} "{{ object }}" ?</p>
+    <input type="submit" value="{% trans 'Confirm' %}" />
 </form>
-
 {% endblock %}

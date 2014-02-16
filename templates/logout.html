@@ -1,8 +1,7 @@
 {% extends "base4book.html" %}
+{% load i18n %}
 
-{% block title %}
-Logout Page
-{% endblock %}
+{% block title %}{% trans 'Log out' %}{% endblock %}
 
 {% block content %}
 	<!-- Container -->
@@ -17,14 +16,14 @@ Logout Page
 
 		<!-- END Header -->
 		<div class="breadcrumbs">
-	    	<a href="/login/">ホーム</a>
+	    	<a href="/login/">{% trans 'Home' %}</a>
 		</div>
 		
 		<!-- Content -->
 		<div id="content" class="colM">
-			<h2>ログアウト</h2>
-			<p>ご利用ありがとうございました。</p>
-			<p><a href="/login/">もう一度ログイン</a></p>
+			<h2>{% trans 'Log out' %}</h2>
+			<p>{% trans 'Thanks for spending some quality time with the Web site today.' %}</p>
+			<p><a href="/login/">{% trans 'Log in again' %}</a></p>
 			<br class="clear" />
 		</div>
 		<!-- END Content -->

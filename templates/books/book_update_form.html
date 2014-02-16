@@ -1,12 +1,13 @@
 {% extends "base4book.html" %}
+{% load i18n %}
 
-{% block title %}Update{% endblock %}
+{% block title %}{% trans 'Update' %}{% endblock %}
 
 {% block content %}
 <div>
-	<a href='../..'>Index</a>&rsaquo;<a href='..'>Books</a>&rsaquo;Book Update
+	<a href='../..'>{% trans 'Books Index' %}</a>&rsaquo;<a href='..'>{% trans 'Book Detail' %}</a>&rsaquo;{% trans 'Update' %}
 </div>
-<h2>Book Update</h2>
+<h2>{% trans 'Update' %}</h2>
 <form action="" method="post" class="form-horizontal">
 	{% csrf_token %}
 	<div class="form-row">
@@ -16,8 +17,7 @@
 		</script>
 	</div>
 	<div class="submit-row">
-		<input type="submit" value="Update" />
+		<input type="submit" value="{% trans 'Update' %}" />
 	</div>
 </form>
 {% endblock %}
-</body>

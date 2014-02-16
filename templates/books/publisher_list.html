@@ -1,14 +1,11 @@
 {% extends "base.html" %}
-
-{% comment %}
-Chapter 11 page 3 / 7 generic template
-{% endcomment %}
+{% load i18n %}
 
 {% block content %}
 	<div>
-		<a href='..'>Index</a>&rsaquo;Publishers
+		<a href='..'>{% trans 'Books Index' %}</a>&rsaquo;{% trans 'Publisher List' %}
 	</div>
-	<h2>Publishers</h2>
+	<h2>{% trans 'Publisher List' %}</h2>
 	{% if object_list %}
 		<ul>
 			{% for object in object_list %}
@@ -31,8 +28,8 @@ Chapter 11 page 3 / 7 generic template
 			</div>
 		{% endif %}
 	{% else %}
-		<p>No authors found !!! :(</p>
+		<p>{% trans 'None of publishers was founded.' %}(</p>
 	{% endif %}
 	
-	<a href='../publisher/new/'>create</a>
+	<a href='../publisher/new/'>{% trans 'Create' %}</a>
 {% endblock %}

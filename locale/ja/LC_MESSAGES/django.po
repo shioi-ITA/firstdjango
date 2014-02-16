@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-15 21:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\templates\login.html:9
+msgid "Sorry, that is not a valid username or password."
+msgstr "有効なユーザー名、または、パスワードではありません。"
+
+#: .\templates\books\author_detail.html:4
+#: .\templates\books\author_detail.html:8
+#: .\templates\books\author_detail.html:10
+msgid "Author Detail"
+msgstr "著者 詳細"
+
+#: .\templates\books\author_detail.html:8 .\templates\books\author_list.html:6
+#: .\templates\books\book_create_form.html:8
+#: .\templates\books\book_detail.html:8 .\templates\books\book_list.html:6
+#: .\templates\books\book_update_form.html:8 .\templates\books\index.html:4
+#: .\templates\books\index.html.py:7 .\templates\books\publisher_detail.html:8
+#: .\templates\books\publisher_list.html:6
+msgid "Books Index"
+msgstr "各一覧"
+
+#: .\templates\books\author_detail.html:8 .\templates\books\author_list.html:6
+#: .\templates\books\author_list.html:8 .\templates\books\index.html:11
+msgid "Author List"
+msgstr "著者 一覧"
+
+#: .\templates\books\author_detail.html:18
+#: .\templates\books\book_detail.html:29
+#: .\templates\books\publisher_detail.html:21
+msgid "Delete"
+msgstr "削除"
+
+#: .\templates\books\author_detail.html:19
+#: .\templates\books\book_detail.html:30
+#: .\templates\books\book_update_form.html:4
+#: .\templates\books\book_update_form.html:8
+#: .\templates\books\book_update_form.html:10
+#: .\templates\books\book_update_form.html:20
+#: .\templates\books\object_update_form.html:4
+#: .\templates\books\object_update_form.html:10
+#: .\templates\books\object_update_form.html:15
+#: .\templates\books\publisher_detail.html:22
+msgid "Update"
+msgstr "改訂"
+
+#: .\templates\books\author_list.html:31
+msgid "None of authors was founded."
+msgstr "著者が見つかりませんでした。"
+
+#: .\templates\books\author_list.html:34
+#: .\templates\books\book_create_form.html:4
+#: .\templates\books\book_create_form.html:8
+#: .\templates\books\book_create_form.html:10
+#: .\templates\books\book_create_form.html:20
+#: .\templates\books\book_list.html:34
+#: .\templates\books\object_create_form.html:4
+#: .\templates\books\object_create_form.html:10
+#: .\templates\books\object_create_form.html:14
+#: .\templates\books\publisher_list.html:34
+msgid "Create"
+msgstr "作成"
+
+#: .\templates\books\book_create_form.html:8
+#: .\templates\books\book_detail.html:8 .\templates\books\book_list.html:6
+#: .\templates\books\book_list.html.py:8 .\templates\books\index.html:13
+msgid "Book List"
+msgstr "書籍 一覧"
+
+#: .\templates\books\book_detail.html:4 .\templates\books\book_detail.html:8
+#: .\templates\books\book_detail.html:10
+#: .\templates\books\book_update_form.html:8
+msgid "Book Detail"
+msgstr "書籍 詳細"
+
+#: .\templates\books\book_detail.html:21 .\templates\books\book_list.html:31
+msgid "None of books was founded."
+msgstr "書籍が見つかりませんでした。"
+
+#: .\templates\books\index.html:12 .\templates\books\publisher_detail.html:8
+#: .\templates\books\publisher_list.html:6
+#: .\templates\books\publisher_list.html:8
+msgid "Publisher List"
+msgstr "出版社 一覧"
+
+#: .\templates\books\login.html:7
+msgid "Sorry, that is not a sufficient authorization."
+msgstr "申し訳ありませんが、貴方の権限では不十分です。"
+
+#: .\templates\books\object_confirm_delete.html:4
+#: .\templates\books\object_confirm_delete.html:10
+msgid "Delete Confirm"
+msgstr "削除 確認"
+
+#: .\templates\books\object_confirm_delete.html:8
+#: .\templates\books\object_create_form.html:8
+#: .\templates\books\object_update_form.html:8
+msgid "Back"
+msgstr "戻る"
+
+#: .\templates\books\object_confirm_delete.html:12
+msgid "Are you sure that you want to delete"
+msgstr "削除してして宜しいですか　"
+
+#: .\templates\books\object_confirm_delete.html:13
+msgid "Confirm"
+msgstr "確認"
+
+#: .\templates\books\publisher_detail.html:4
+#: .\templates\books\publisher_detail.html:8
+#: .\templates\books\publisher_detail.html:10
+msgid "Publisher Detail"
+msgstr "著者 詳細"
+
+#: .\templates\books\publisher_list.html:31
+msgid "None of publishers was founded."
+msgstr "出版社が見つかりませんでした。"
