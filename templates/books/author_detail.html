@@ -9,12 +9,13 @@
 </div>
 <h2>{% trans 'Author Detail' %}</h2>
 <table  border=1 bordercolor="black">
-	<tr><td width=100>id</td><td>{{ object.id }}</td><tr>
-	<tr><td>first_name</td><td> {{ object.first_name }}</td><tr>
-	<tr><td>last_name</td><td>{{ object.last_name }}</td><tr>
-	<tr><td>email</td><td>{{ object.email }}</td><tr>
+	<tr bgcolor="#80ffff"  align=center>
+		<td width=100>{% trans 'Item Name' %}</td><td width=200>{% trans 'Item Value' %}</td>
+	</tr>
+	<tr><td>{% trans 'First Name' %}</td><td>{{ object.first_name }}</td><tr>
+	<tr><td>{% trans 'Last Name' %}</td><td>{{ object.last_name }}</td><tr>
+	<tr><td>{% trans 'E-Mail' %}</td><td>{{ object.email }}</td><tr>
 </table>
 <br/>
-<a href='delete'>{% trans 'Delete' %}</a>
-<a href='update'>{% trans 'Update' %}</a>
+<pre><a href='delete'>{% trans 'Delete' %}</a>  <a href='update'>{% trans 'Update' %}</a></pre>
 {% endblock %}

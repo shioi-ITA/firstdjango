@@ -9,13 +9,15 @@
 </div>
 <h2>{% trans 'Publisher Detail' %}</h2>
 <table  border=1 bordercolor="black">
-	<tr><td width=100>id</td><td>{{ object.id }}</td><tr>
-	<tr><td>Name</td><td>{{ object.name }}</td><tr>
-	<tr><td>Address</td><td>{{ object.address }}</td><tr>
-	<tr><td>State Province</td><td>{{ object.state_province }}</td><tr>
-	<tr><td>City</td><td>{{ object.city }}</td><tr>
-	<tr><td>Country</td><td>{{ object.country }}</td><tr>
-	<tr><td>Website</td><td>{{ object.website }}</td><tr>
+	<tr bgcolor="#80ffff"  align=center>
+		<td width=120>{% trans 'Item Name' %}</td><td width=200>{% trans 'Item Value' %}</td>
+	</tr>
+	<tr><td>{% trans 'Name' %}</td><td>{{ object.name }}</td><tr>
+	<tr><td>{% trans 'Address' %}</td><td>{{ object.address }}</td><tr>
+	<tr><td>{% trans 'State Province' %}</td><td>{{ object.state_province }}</td><tr>
+	<tr><td>{% trans 'City' %}</td><td>{{ object.city }}</td><tr>
+	<tr><td>{% trans 'Country' %}</td><td>{{ object.country }}</td><tr>
+	<tr><td>{% trans 'Website' %}</td><td>{{ object.website }}</td><tr>
 </table>
 <br/>
 <a href='delete'>{% trans 'Delete' %}</a>

@@ -13,6 +13,7 @@
 			{% endfor %}
 		</ul>
 		{%if is_paginated %}
+			<hr>
 			<div class="pagination">
 				<span class="page-links">
 					{% if page_obj.has_previous %}
@@ -26,6 +27,7 @@
 					{% endif %}
 				</span>
 			</div>
+			<hr>
 		{% endif %}
 	{% else %}
 		<p>{% trans 'None of books was founded.' %}(</p>

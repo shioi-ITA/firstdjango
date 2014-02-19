@@ -9,23 +9,24 @@
 </div>
 <h2>{% trans 'Book Detail' %}</h2>
 <table  border=1 bordercolor="black">
-	<tr><td width=100>id</td><td>{{ object.id }}</td><tr>
-	<tr><td>Title</td><td>{{ object.title }}</td><tr>
-	<tr><td>Authors</td>
+	<tr bgcolor="#80ffff"  align=center>
+		<td width=120>{% trans 'Item Name' %}</td><td width=300>{% trans 'Item Value' %}</td>
+	</tr>
+	<tr><td>{% trans 'Title' %}</td><td>{{ object.title }}</td><tr>
+	<tr><td>{% trans 'Authors' %}</td>
 		<td>
-		{% if object.authors %}
-			{% for author in object.authors.all %}
-				{{ author }} <br />
-			{% endfor %}
-		{% else %}
-			{% trans 'None of books was founded.' %}
-		{% endif %}
+			{% if object.authors %}
+				{% for author in object.authors.all %}
+					{{ author }} <br />
+				{% endfor %}
+			{% else %}
+				{% trans 'None of books was founded.' %}
+			{% endif %}
 		</td>
 	<tr>
-	<tr><td>Publisher</td><td>{{ object.publisher }}</td><tr>
-	<tr><td>Publication_date</td><td>{{ object.publication_date }}</td><tr>
+	<tr><td>{% trans 'Publisher' %}</td><td>{{ object.publisher }}</td><tr>
+	<tr><td>{% trans 'Publication Date' %}</td><td>{{ object.publication_date }}</td><tr>
 </table>
 <br/>
-<a href='delete'>{% trans 'Delete' %}</a>
-<a href='update'>{% trans 'Update' %}</a>
+<pre><a href='delete'>{% trans 'Delete' %}</a>  <a href='update'>{% trans 'Update' %}</a></pre>
 {% endblock %}

@@ -17,6 +17,12 @@ Site Administrator's username/password is administrator/administrator.
 
 The Users's username/password are adam.smith/adam.smith and john/due.
 
+update 2013/02/19
+------------------
+update GUI
+
+
+
 
 
 
@@ -37,3 +43,8 @@ update 2013/02/16
 サイト管理者のユーザ名／パスワードが、administrator/administratorです。
 
 一般ユーザー名／パスワードが、adam.smith/adam.smith と john/dueです。
+
+
+update 2013/02/19
+------------------
+GUI回りを少し改善（整形しました）
