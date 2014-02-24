@@ -28,5 +28,6 @@
 	<tr><td>{% trans 'Publication Date' %}</td><td>{{ object.publication_date }}</td><tr>
 </table>
 <br/>
-<pre><a href='delete'>{% trans 'Delete' %}</a>  <a href='update'>{% trans 'Update' %}</a></pre>
+
+<pre><a href="{% url 'books:book-delete' pk=object.id %}">{% trans 'Delete' %}</a>  <a href="{% url 'books:book-update' pk=object.id %}">{% trans 'Update' %}</a></pre>
 {% endblock %}

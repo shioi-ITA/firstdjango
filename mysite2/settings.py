@@ -87,4 +87,6 @@ LOCALE_PATHS = ('./locale',)
 
 STATIC_URL = '/static/'
 
-#LOGIN_URL = '/login/'
+LOGIN_URL = '/login/'
+
+LOGOUT_URL = '/logout/'

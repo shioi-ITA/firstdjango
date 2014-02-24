@@ -33,5 +33,5 @@
 		<p>{% trans 'None of publishers was founded.' %}(</p>
 	{% endif %}
 	
-	<a href='../publisher/new/'>{% trans 'Create' %}</a>
+	<a href="{% url 'books:publisher-new' %}">{% trans 'Create' %}</a>
 {% endblock %}

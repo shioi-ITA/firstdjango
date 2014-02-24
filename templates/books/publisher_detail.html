@@ -20,6 +20,6 @@
 	<tr><td>{% trans 'Website' %}</td><td>{{ object.website }}</td><tr>
 </table>
 <br/>
-<a href='delete'>{% trans 'Delete' %}</a>
-<a href='update'>{% trans 'Update' %}</a>
+
+<pre><a href="{% url 'books:publisher-delete' pk=object.id %}">{% trans 'Delete' %}</a>  <a href="{% url 'books:publisher-update' pk=object.id %}">{% trans 'Update' %}</a></pre>
 {% endblock %}

@@ -17,5 +17,6 @@
 	<tr><td>{% trans 'E-Mail' %}</td><td>{{ object.email }}</td><tr>
 </table>
 <br/>
-<pre><a href='delete'>{% trans 'Delete' %}</a>  <a href='update'>{% trans 'Update' %}</a></pre>
+
+<pre><a href="{% url 'books:author-delete' pk=object.id %}">{% trans 'Delete' %}</a>  <a href="{% url 'books:author-update' pk=object.id %}">{% trans 'Update' %}</a></pre>
 {% endblock %}
