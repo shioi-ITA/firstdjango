@@ -8,15 +8,9 @@
 <form action="" method="post">
 	{% csrf_token %}
 	<ul>
-		<li><a href='{% url "books:author-list" %}'>{% trans 'Author List' %}</a>
-		<li><a href='{% url "books:publisher-list" %}'>{% trans 'Publisher List' %}</a>
-		<li><a href='{% url "books:book-list" %}'>{% trans 'Book List' %}</a>
+		<li><a href="{% url 'books:author-list' %}">{% trans 'Author List' %}</a></li>
+		<li><a href="{% url 'books:publisher-list' %}">{% trans 'Publisher List' %}</a></li>
+		<li><a href="{% url 'books:book-list' %}">{% trans 'Book List' %}</a></li>
 	</ul>
-	<div>
-		<a href='/login/'>{% trans 'Log in' %}</a>
-	</div>
-	<div>
-		<a href='/logout/'>{% trans 'Log out' %}</a>
-	</div>
 </form>
 {% endblock %}

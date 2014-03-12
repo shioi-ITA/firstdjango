@@ -15,6 +15,6 @@ urlpatterns = patterns('',
 
 urlpatterns += patterns('',
     # existing patterns here...
-    (r'^login/$', login, { 'template_name':'login.html'}),
-    (r'^logout/$', logout, {'template_name':'logout.html'}),
+    (r'^login/$', login, {'template_name':'registration/login.html'}),
+    (r'^logout/$', logout, {'template_name':'registration/logout.html'}),
 )

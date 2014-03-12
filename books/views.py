@@ -38,7 +38,7 @@ class AuthorCreate(CreateView):
     template_name = 'books/object_create_form.html'
     success_url = reverse_lazy('books:author-list',)
 
-    #@method_decorator(login_required)
+    @method_decorator(login_required)
     @method_decorator(permission_required('books.add_author', login_url='/books/login/'))
     def dispatch(self, request, *args, **kwargs):        
         return super(AuthorCreate, self).dispatch(request, *args, **kwargs)
@@ -48,7 +48,7 @@ class AuthorUpdate(UpdateView):
     template_name = 'books/object_update_form.html'
     success_url = reverse_lazy('books:author-list',)
 
-    #@method_decorator(login_required)
+    @method_decorator(login_required)
     @method_decorator(permission_required('books.change_author', login_url='/books/login/'))
     def dispatch(self, request, *args, **kwargs):        
         return super(AuthorUpdate, self).dispatch(request, *args, **kwargs)
@@ -58,7 +58,7 @@ class AuthorDelete(DeleteView):
     template_name='books/object_confirm_delete.html'
     success_url = reverse_lazy('books:author-list',)
 
-    #@method_decorator(login_required)
+    @method_decorator(login_required)
     @method_decorator(permission_required('books.delete_author', login_url='/books/login/'))
     def dispatch(self, request, *args, **kwargs):        
         return super(AuthorDelete, self).dispatch(request, *args, **kwargs)
@@ -84,7 +84,7 @@ class PublisherCreate(CreateView):
     template_name = 'books/object_create_form.html'
     success_url = reverse_lazy('books:publisher-list',)
 
-    #@method_decorator(login_required)
+    @method_decorator(login_required)
     @method_decorator(permission_required('books.add_publisher', login_url='/books/login/'))
     def dispatch(self, request, *args, **kwargs):        
         return super(PublisherCreate, self).dispatch(request, *args, **kwargs)
@@ -94,7 +94,7 @@ class PublisherUpdate(UpdateView):
     template_name = 'books/object_update_form.html'
     success_url = reverse_lazy('books:publisher-list',)
 
-    #@method_decorator(login_required)
+    @method_decorator(login_required)
     @method_decorator(permission_required('books.change_publisher', login_url='/books/login/'))
     def dispatch(self, request, *args, **kwargs):        
         return super(PublisherUpdate, self).dispatch(request, *args, **kwargs)
@@ -104,7 +104,7 @@ class PublisherDelete(DeleteView):
     template_name='books/object_confirm_delete.html'
     success_url = reverse_lazy('books:publisher-list',)
 
-    #@method_decorator(login_required)
+    @method_decorator(login_required)
     @method_decorator(permission_required('books.delete_publisher', login_url='/books/login/'))
     def dispatch(self, request, *args, **kwargs):        
         return super(PublisherDelete, self).dispatch(request, *args, **kwargs)
@@ -132,7 +132,7 @@ class BookCreate(CreateView):
     template_name = 'books/book_create_form.html'
     success_url = reverse_lazy('books:book-list')
 
-    #@method_decorator(login_required)
+    @method_decorator(login_required)
     @method_decorator(permission_required('books.add_book', login_url='/books/login/'))
     def dispatch(self, request, *args, **kwargs):        
         return super(BookCreate, self).dispatch(request, *args, **kwargs)
@@ -144,7 +144,7 @@ class BookUpdate(UpdateView):
     template_name = 'books/book_update_form.html'
     success_url = reverse_lazy('books:book-list')
 
-    #@method_decorator(login_required)
+    @method_decorator(login_required)
     @method_decorator(permission_required('books.change_book', login_url='/books/login/'))
     def dispatch(self, request, *args, **kwargs):        
         return super(BookUpdate, self).dispatch(request, *args, **kwargs)
@@ -154,7 +154,7 @@ class BookDelete(DeleteView):
     template_name='books/object_confirm_delete.html'
     success_url = reverse_lazy('books:book-list',)
 
-    #@method_decorator(login_required)
+    @method_decorator(login_required)
     @method_decorator(permission_required('books.delete_book', login_url='/books/login/'))
     def dispatch(self, request, *args, **kwargs):        
         return super(BookDelete, self).dispatch(request, *args, **kwargs)

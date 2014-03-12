@@ -1,10 +1,20 @@
 <!DOCTYPE HTML>
 <html lang="ja">
+
+{% load i18n %}
+
 <head>
 	<title>{% block title %}{% endblock %}</title>
 
 </head>
 <body>
+	<div align="right">
+		{% if user.is_anonymous %}
+			<a href="{% url 'django.contrib.auth.views.login' %}" >{% trans "Log in" %}</a>
+		{% else %}
+		<a href="{% url 'django.contrib.auth.views.logout' %}">{% trans "Log out" %}</a>
+		{% endif %}
+	</div>
     {% block content %}{% endblock %}
 </body>
 </html>

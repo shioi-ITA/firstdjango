@@ -10,20 +10,20 @@
 		<!-- Header -->
 		<div id="header">
 			<div id="branding">
-				<h1 id="site-name">Mysite3 Books</h1>
+				<h1 id="site-name">Mysite2 Books</h1>
 			</div>
 		</div>
 
 		<!-- END Header -->
 		<div class="breadcrumbs">
-	    	<a href="/login/">{% trans 'Home' %}</a>
+	    	<a href="{% url 'django.contrib.auth.views.login' %}">{% trans 'Home' %}</a>
 		</div>
 		
 		<!-- Content -->
 		<div id="content" class="colM">
 			<h2>{% trans 'Log out' %}</h2>
 			<p>{% trans 'Thanks for spending some quality time with the Web site today.' %}</p>
-			<p><a href="/login/">{% trans 'Log in again' %}</a></p>
+			<p><a href="{% url 'django.contrib.auth.views.login' %}">{% trans 'Log in again' %}</a></p>
 			<br class="clear" />
 		</div>
 		<!-- END Content -->
