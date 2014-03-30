@@ -9,12 +9,16 @@ urlpatterns = patterns('',
     # url(r'^$', 'mysite2.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^books/', include('books.urls', namespace="books")),
+    (r'^admin/', include(admin.site.urls)),
+    (r'^books/', include('books.urls', namespace="books")),
+    (r'^login/$', login, {'template_name':'registration/login.html'}),
+    (r'^logout/$', logout, {'template_name':'registration/logout.html'}),
 )
 
 urlpatterns += patterns('',
     # existing patterns here...
-    (r'^login/$', login, {'template_name':'registration/login.html'}),
-    (r'^logout/$', logout, {'template_name':'registration/logout.html'}),
+    (r'^search/$', 'search.views.search'),
+    (r'^tiny_mce/(?P<path>.*)$', 'django.views.static.serve', { 'document_root': 'C:/python_study/tinymce_4.0.20/tinymce/js/tinymce/' }),
+    #(r'^tiny_mce/(?P<path>.*)$', 'django.views.static.serve', { 'document_root': 'C:/python_study/tinymce_3.5.10/tinymce/jscripts/tiny_mce/' }),
+    (r'', include('django.contrib.flatpages.urls')),
 )

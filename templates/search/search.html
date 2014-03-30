@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+{% load i18n %}
+
+<html lang="ja">
+<head>
+	<title>{% trans 'Search' %}</title>
+</head>
+<body>
+	<h2>{% trans 'Return the list of flatpages whose one of keywords is maching search term or content is containing search term.' %}</h2>
+	<form method="get" action="/search/">
+		<p><label for="id_q">{% trans 'Search'%} :</label>
+			<input type="text" name="q" id="id_q" value="{{ query }}" />
+			<input type="submit" value="{% trans 'Submit' %}" /></p>
+	</form>
+	{% if keyword_results or results %}
+		<p>{% trans 'You searched for' %} "{{ query }}".</p>
+		{% if keyword_results %}
+			<p>{% trans 'Recommended pages' %} :</p>
+			<ul>
+			{% for page in keyword_results %}
+				<li><a href="{{ page.get_absolute_url }}">{{ page.title }}</a></li>
+			{% endfor %}
+			</ul>
+		{% endif %}
+		{% if results %}
+			<p>{% trans 'Search results' %} :</p>
+			<ul>
+				{% for page in results %}
+					<li><a href="{{ page.get_absolute_url }}">{{ page.title }}</a></li>
+				{% endfor %}
+			</ul>
+		{% endif %}
+	{% endif %}
+	{% if query %}
+		{%if not keyword_results and not results %}
+			<p>{% trans 'No results found.' %}</p>
+		{% endif %}
+	{% else %}
+		<p>{% trans "Type a search query into the box above, and press 'Submit' to search." %}</p>
+	{% endif %}
+</body>
+</html>

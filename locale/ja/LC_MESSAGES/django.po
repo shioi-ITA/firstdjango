@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-15 21:14+0900\n"
+"POT-Creation-Date: 2014-02-19 22:30+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+#: .\templates\login.html:4 .\templates\login.html.py:7
+#: .\templates\login.html:18 .\templates\books\login.html:4
+#: .\templates\books\login.html.py:15
+msgid "Log in"
+msgstr ""
+
 #: .\templates\login.html:9
 msgid "Sorry, that is not a valid username or password."
 msgstr "有効なユーザー名、または、パスワードではありません。"
+
+#: .\templates\login.html:11
+#msgid "Enter a username and password."
+#msgstr ""
+
+#: .\templates\login.html:14 .\templates\books\login.html:11
+#msgid "User"
+#msgstr ""
+
+#: .\templates\login.html:16 .\templates\books\login.html:13
+#msgid "Password"
+#msgstr ""
+
+#: .\templates\logout.html:4 .\templates\logout.html.py:24
+#: .\templates\books\index.html:16
+#msgid "Log out"
+#msgstr ""
+
+#: .\templates\logout.html:19
+#msgid "Home"
+#msgstr ""
+
+#: .\templates\logout.html:25
+#msgid "Thanks for spending some quality time with the Web site today."
+#msgstr ""
+
+#: .\templates\logout.html:26
+#msgid "Log in again"
+#msgstr ""
+
+#: .\templates\admin\base_site.html:4
+#msgid "Site administration"
+#msgstr ""
 
 #: .\templates\books\author_detail.html:4
 #: .\templates\books\author_detail.html:8
@@ -41,39 +80,63 @@ msgstr "各一覧"
 msgid "Author List"
 msgstr "著者 一覧"
 
-#: .\templates\books\author_detail.html:18
-#: .\templates\books\book_detail.html:29
-#: .\templates\books\publisher_detail.html:21
+#: .\templates\books\author_detail.html:13
+#: .\templates\books\book_detail.html:13
+#: .\templates\books\publisher_detail.html:13
+msgid "Item Name"
+msgstr "項目名"
+
+#: .\templates\books\author_detail.html:13
+#: .\templates\books\book_detail.html:13
+#: .\templates\books\publisher_detail.html:13
+msgid "Item Value"
+msgstr "項目値"
+
+#: .\templates\books\author_detail.html:15
+msgid "First Name"
+msgstr "氏"
+
+#: .\templates\books\author_detail.html:16
+msgid "Last Name"
+msgstr "名"
+
+#: .\templates\books\author_detail.html:17
+msgid "E-Mail"
+msgstr "メールアドレス"
+
+#: .\templates\books\author_detail.html:20
+#: .\templates\books\book_detail.html:31
+#: .\templates\books\publisher_detail.html:23
 msgid "Delete"
 msgstr "削除"
 
-#: .\templates\books\author_detail.html:19
-#: .\templates\books\book_detail.html:30
+#: .\templates\books\author_detail.html:20
+#: .\templates\books\book_detail.html:31
 #: .\templates\books\book_update_form.html:4
 #: .\templates\books\book_update_form.html:8
 #: .\templates\books\book_update_form.html:10
 #: .\templates\books\book_update_form.html:20
 #: .\templates\books\object_update_form.html:4
 #: .\templates\books\object_update_form.html:10
-#: .\templates\books\object_update_form.html:15
-#: .\templates\books\publisher_detail.html:22
+#: .\templates\books\object_update_form.html:18
+#: .\templates\books\publisher_detail.html:24
 msgid "Update"
 msgstr "改訂"
 
-#: .\templates\books\author_list.html:31
+#: .\templates\books\author_list.html:33
 msgid "None of authors was founded."
 msgstr "著者が見つかりませんでした。"
 
-#: .\templates\books\author_list.html:34
+#: .\templates\books\author_list.html:36
 #: .\templates\books\book_create_form.html:4
 #: .\templates\books\book_create_form.html:8
 #: .\templates\books\book_create_form.html:10
 #: .\templates\books\book_create_form.html:20
-#: .\templates\books\book_list.html:34
+#: .\templates\books\book_list.html:36
 #: .\templates\books\object_create_form.html:4
 #: .\templates\books\object_create_form.html:10
-#: .\templates\books\object_create_form.html:14
-#: .\templates\books\publisher_list.html:34
+#: .\templates\books\object_create_form.html:17
+#: .\templates\books\publisher_list.html:36
 msgid "Create"
 msgstr "作成"
 
@@ -89,9 +152,25 @@ msgstr "書籍 一覧"
 msgid "Book Detail"
 msgstr "書籍 詳細"
 
-#: .\templates\books\book_detail.html:21 .\templates\books\book_list.html:31
+#: .\templates\books\book_detail.html:15
+msgid "Title"
+msgstr "タイトル"
+
+#: .\templates\books\book_detail.html:16
+msgid "Authors"
+msgstr "著者（複数可）"
+
+#: .\templates\books\book_detail.html:23 .\templates\books\book_list.html:33
 msgid "None of books was founded."
 msgstr "書籍が見つかりませんでした。"
+
+#: .\templates\books\book_detail.html:27
+msgid "Publisher"
+msgstr "出版社"
+
+#: .\templates\books\book_detail.html:28
+msgid "Publication Date"
+msgstr "出版日"
 
 #: .\templates\books\index.html:12 .\templates\books\publisher_detail.html:8
 #: .\templates\books\publisher_list.html:6
@@ -128,6 +207,62 @@ msgstr "確認"
 msgid "Publisher Detail"
 msgstr "著者 詳細"
 
-#: .\templates\books\publisher_list.html:31
+#: .\templates\books\publisher_detail.html:15
+msgid "Name"
+msgstr "名前"
+
+#: .\templates\books\publisher_detail.html:16
+msgid "Address"
+msgstr "住所"
+
+#: .\templates\books\publisher_detail.html:17
+msgid "State Province"
+msgstr "都道府県"
+
+#: .\templates\books\publisher_detail.html:18
+msgid "City"
+msgstr "市"
+
+#: .\templates\books\publisher_detail.html:19
+msgid "Country"
+msgstr "国"
+
+#: .\templates\books\publisher_detail.html:20
+msgid "Website"
+msgstr "ウェブサイト"
+
+#: .\templates\books\publisher_list.html:33
 msgid "None of publishers was founded."
 msgstr "出版社が見つかりませんでした。"
+
+#: .\templates\search\search.html:4
+msgid "Search"
+msgstr "サーチ"
+
+#: .\templates\search\search.html:7
+msgid "Return the list of flatpages whose one of keywords is maching search term or content is containing search term."
+msgstr "サーチする言葉がキーワードのいずれかに一致、または、コンテンツに含まれるフラットページのリストを返却します。"
+
+#: .\templates\search\search.html:10
+msgid "Submit"
+msgstr "実行"
+
+#: .\templates\search\search.html:14
+msgid "You searched for"
+msgstr "貴方がサーチした言葉"
+
+#: .\templates\search\search.html:16
+msgid "Recommended pages"
+msgstr "キーワードと一致したページ"
+
+#: .\templates\search\search.html:24
+msgid "Search results"
+msgstr "コンテンツに含まれるページ"
+
+#: .\templates\search\search.html:33
+msgid "No results found."
+msgstr "該当ページなし"
+
+#: .\templates\search\search.html:35
+msgid "Type a search query into the box above, and press 'Submit' to search."
+msgstr "サーチする言葉を入力し、「実行」ボタンを押下して下さい。"

@@ -25,7 +25,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS =  ['127.0.0.1', 'localhost']  # DEBUG True
 
 TEMPLATE_DIRS = (
     'C:/python_study/django_tutorial1.6/mysite2/templates',
@@ -39,7 +39,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.flatpages',
     'books',
+    'search',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -92,3 +95,5 @@ LOGIN_URL = '/login/'
 LOGOUT_URL = '/logout/'
 
 LOGIN_REDIRECT_URL = '/books/'
+
+SITE_ID = 1
